@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RiderHub</string>
+    <string name="for_you">Para ti</string>
+    <string name="configution">Configuración</string>
+    <string name="next">Siguiente</string>
+    <string name="new_publication">Nueva publicación</string>
+</resources>
