@@ -6,6 +6,71 @@
     android:layout_height="match_parent"
     android:background="@color/background_color">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".Search2Activity">
+
+        <Button
+            android:id="@+id/buttonHome"
+            style="@style/button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/home_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/search_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPhoto"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonPhoto"
+            style="@style/button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/image_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonProfile"
+            app:layout_constraintStart_toEndOf="@+id/buttonSearch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonProfile"
+            style="@style/button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/person_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
@@ -77,8 +142,6 @@
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="74dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
         tools:srcCompat="@tools:sample/avatars" />
@@ -133,62 +196,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView43"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button_message2"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button_message3"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message5"
-            app:layout_constraintStart_toEndOf="@+id/button_message4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/button_message5"
-            style="@style/button"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_message3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/button_message4"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message3"
-            app:layout_constraintStart_toEndOf="@+id/button_message2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="275dp"
@@ -201,6 +208,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:hint="hint" />
     </com.google.android.material.textfield.TextInputLayout>
 

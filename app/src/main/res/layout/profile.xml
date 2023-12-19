@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    android:textAlignment="center">
+    android:textAlignment="center"
+    tools:context=".ProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -16,53 +17,59 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button_message2"
+            android:id="@+id/buttonHome"
             style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/bookmark_48px"
-            app:iconSize="32dp"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/home_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message4"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button_message3"
+            android:id="@+id/buttonSearch"
             style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/search_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message5"
-            app:layout_constraintStart_toEndOf="@+id/button_message4"
+            app:layout_constraintEnd_toStartOf="@+id/buttonPhoto"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
-            android:id="@+id/button_message5"
+            android:id="@+id/buttonPhoto"
             style="@style/button"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/image_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonProfile"
+            app:layout_constraintStart_toEndOf="@+id/buttonSearch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonProfile"
+            style="@style/button"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            app:icon="@drawable/person_48px"
+            app:iconPadding="0dp"
+            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button_message3"
+            app:layout_constraintStart_toEndOf="@+id/buttonPhoto"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/button_message4"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button_message3"
-            app:layout_constraintStart_toEndOf="@+id/button_message2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -72,17 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/button_message"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginEnd="18dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -94,6 +90,17 @@
             android:text="@string/for_you"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/button_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settings_48px" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -171,7 +178,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="12dp"
-        android:text="Button"
+        android:text="@string/edit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -184,18 +191,8 @@
         android:layout_marginTop="12dp"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/button_like"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <Button
-        android:id="@+id/button_like3"
-        style="@style/button"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="17dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:text="@string/share" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -221,7 +218,6 @@
         android:id="@+id/imageView16"
         android:layout_width="123dp"
         android:layout_height="83dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toStartOf="@+id/imageView17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11"
@@ -241,7 +237,6 @@
         android:id="@+id/imageView17"
         android:layout_width="123dp"
         android:layout_height="83dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toStartOf="@+id/imageView18"
         app:layout_constraintStart_toEndOf="@+id/imageView16"
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
@@ -261,7 +256,6 @@
         android:id="@+id/imageView18"
         android:layout_width="123dp"
         android:layout_height="83dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
@@ -284,16 +278,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/button_like3"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark"
-        app:srcCompat="@drawable/bookmark_48px"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="290dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

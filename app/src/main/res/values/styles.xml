@@ -11,6 +11,7 @@
     </style>
     <style name="button">
         <item name="android:backgroundTint">@color/button_color</item>
+        <item name="background">@color/button_color</item>
     </style>
     <style name="background_color" parent="Theme.AppCompat.DayNight">
         <item name="android:windowBackground">@color/background_color</item>
