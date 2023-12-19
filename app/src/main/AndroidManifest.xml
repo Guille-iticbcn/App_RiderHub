@@ -17,9 +17,23 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MessageActivity">
+            <!-- Pueden haber más configuraciones aquí -->
+        </activity>
+        <activity android:name=".NewPublicationActivity">
+            <!-- Pueden haber más configuraciones aquí -->
+        </activity>
+        <activity android:name=".ProfileActivity">
+            <!-- Pueden haber más configuraciones aquí -->
+        </activity>
+        <activity android:name=".SearchActivity">
+            <!-- Pueden haber más configuraciones aquí -->
+        </activity>
+        <activity android:name=".Search2Activity">
+            <!-- Pueden haber más configuraciones aquí -->
         </activity>
     </application>
 

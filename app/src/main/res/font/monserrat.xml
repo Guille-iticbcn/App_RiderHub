@@ -10,10 +10,4 @@
         android:fontWeight="400"
         android:font="@font/montserrat_italic" />
 
-    <font
-        android:fontStyle="blackItalick"
-        android:fontWeight="400"
-        android:font="@font/montserrat_blackItalic"
-    />
-
 </font-family>

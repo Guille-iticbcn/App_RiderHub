@@ -4,4 +4,6 @@
     <string name="configution">Configuración</string>
     <string name="next">Siguiente</string>
     <string name="new_publication">Nueva publicación</string>
+    <string name="edit">Editar</string>
+    <string name="share">Compartir</string>
 </resources>
