@@ -222,6 +222,7 @@
         android:textColor="@color/button_color"
         app:barrierMargin="0dp"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteY="120dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
