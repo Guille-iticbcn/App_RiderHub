@@ -153,14 +153,10 @@
         android:layout_marginTop="27dp"
         android:text="Mensajes"
         android:textColor="@color/button_color"
-<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
-=======
-        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
         tools:layout_editor_absoluteX="16dp"
         tools:ignore="MissingConstraints" />
->>>>>>> main
 
     <TextView
         android:id="@+id/textView16"
