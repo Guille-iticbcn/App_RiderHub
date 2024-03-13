@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".RegisterFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,52 +22,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:hint="Inicio de Sesión"
-                android:inputType="textEmailAddress"
-                android:text="Inicio de Sesión"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <EditText
-                android:id="@+id/emailField"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:hint="Correo electrónico"
                 android:inputType="textEmailAddress"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:text="REGISTRO DE USUARIO"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+            <EditText
+                android:id="@+id/emailFieldSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp"/>
 
             <EditText
-                android:id="@+id/passwordField"
+                android:id="@+id/passwordFieldSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="42dp"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_marginBottom="16dp"/>
 
-            <Button
-                android:id="@+id/btnLogIn"
+            <EditText
+                android:id="@+id/passwordFieldSignUp2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="iniciarSesion"
-                android:text="Iniciar sesión" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="¿No tienes una cuenta?"
-                android:textAlignment="center" />
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginBottom="42dp"/>
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registrarse"
-                android:onClick="iniciarSesion"/>
+                android:text="Registrarse" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Ya tienes cuenta?"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión" />
         </LinearLayout>
     </ScrollView>
+
 </FrameLayout>
