@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import com.example.myapplication.Usuario
 
@@ -16,5 +17,6 @@ class RecyclerViewHolder (view: View):RecyclerView.ViewHolder(view) {
     fun render(userModel: Usuario){
         user.text = userModel.name
         username.text = userModel.username
+        Glide.with(photo.context).load(userModel.photo).into(photo)
     }
 }
