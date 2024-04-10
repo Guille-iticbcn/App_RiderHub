@@ -14,8 +14,14 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun initEvents() {
         val btnSignIn = findViewById<Button>(R.id.btnSignIn)
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
 
         btnSignIn.setOnClickListener({
+            val i = Intent (this, LogInActivity::class.java)
+            startActivity(i)
+        })
+
+        btnRegister.setOnClickListener({
             val i = Intent (this, LogInActivity::class.java)
             startActivity(i)
         })

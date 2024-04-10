@@ -7,27 +7,36 @@
 
     <ImageView
         android:id="@+id/ivUser"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:background="@color/black" />
 
     <TextView
         android:id="@+id/tvUser"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Guillermo"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tvUsername"
+        app:layout_constraintStart_toEndOf="@+id/ivUser"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivUser"/>
+        tools:text="Guillermo" />
 
     <TextView
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="Guillermo"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="112dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivUser"
         app:layout_constraintTop_toBottomOf="@id/tvUser"
-        app:layout_constraintStart_toEndOf="@+id/ivUser"/>
+        tools:text="Guillermo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
