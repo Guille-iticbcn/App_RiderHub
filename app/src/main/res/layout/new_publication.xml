@@ -99,11 +99,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@drawable/moto7" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="402dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +122,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/logo2" />
 
         <ImageView
             android:id="@+id/imageView49"
@@ -128,7 +133,7 @@
             app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView46"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto3" />
 
         <ImageView
             android:id="@+id/imageView50"
@@ -138,7 +143,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView51"
             app:layout_constraintStart_toEndOf="@+id/imageView49"
             app:layout_constraintTop_toBottomOf="@+id/imageView47"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto4" />
 
         <ImageView
             android:id="@+id/imageView51"
@@ -148,7 +153,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView50"
             app:layout_constraintTop_toBottomOf="@+id/imageView47"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto7" />
 
         <ImageView
             android:id="@+id/imageView52"
@@ -158,7 +163,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView50"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView49"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto5" />
 
         <ImageView
             android:id="@+id/imageView53"
@@ -168,7 +173,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView54"
             app:layout_constraintStart_toEndOf="@+id/imageView52"
             app:layout_constraintTop_toBottomOf="@+id/imageView50"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto6" />
 
         <ImageView
             android:id="@+id/imageView54"
@@ -178,7 +183,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView53"
             app:layout_constraintTop_toBottomOf="@+id/imageView51"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/r7" />
 
         <ImageView
             android:id="@+id/imageView47"
@@ -188,7 +193,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView48"
             app:layout_constraintStart_toEndOf="@+id/imageView46"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto1" />
 
         <ImageView
             android:id="@+id/imageView48"
@@ -198,7 +203,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView47"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/moto2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
