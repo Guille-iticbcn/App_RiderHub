@@ -12,9 +12,11 @@ class BaseDatosAPP(context: Context?, name: String?, factory: SQLiteDatabase.Cur
             "USERNAME TEXT," +
             "USER_PASSWORD TEXT)"
 
-    override fun onCreate(db: SQLiteDatabase?) {
+    val insert = "INSERT INTO Users (ID, USERNAME, USER_PASSWORD) VALUES (1, 'Guille', '1234a')"
 
+    override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(create_users_table)
+        db?.execSQL(insert)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
