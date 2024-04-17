@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         buttonHome.setOnClickListener({
-            val i = Intent (this, MainActivity::class.java)
+            val i = Intent (this, InformeActivity::class.java)
             startActivity(i)
         })
 
