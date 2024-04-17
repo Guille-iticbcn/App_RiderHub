@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_source_options">
+        <item>Instagram</item>
+        <item>Youtube</item>
+        <item>Facebook</item>
+        <item>TikTok</item>
+    </string-array>
+</resources>
