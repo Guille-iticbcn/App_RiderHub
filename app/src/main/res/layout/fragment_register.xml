@@ -27,29 +27,48 @@
                 android:text="REGISTRO DE USUARIO"
                 android:textAlignment="center"
                 android:textSize="34sp" />
-            <EditText
-                android:id="@+id/emailFieldSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Correo electrónico"
-                android:inputType="textEmailAddress"
-                android:layout_marginBottom="16dp"/>
 
-            <EditText
-                android:id="@+id/passwordFieldSignUp"
+            <!-- TextInputLayout for email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="16dp">
+                <EditText
+                    android:id="@+id/emailFieldSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/passwordFieldSignUp2"
+            <!-- TextInputLayout for password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirmar Contraseña"
-                android:inputType="textPassword"
-                android:layout_marginBottom="42dp"/>
+                android:layout_marginBottom="16dp">
+                <EditText
+                    android:id="@+id/passwordFieldSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TextInputLayout for password confirmation -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp">
+                <EditText
+                    android:id="@+id/passwordFieldSignUp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirmar Contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/btnRegister"
@@ -73,5 +92,4 @@
                 android:text="Iniciar Sesión" />
         </LinearLayout>
     </ScrollView>
-
 </FrameLayout>
